@@ -43,5 +43,8 @@
                        </tr>
         </c:forEach>>
 </table>
+<form action="Add_Train.jsp">
+<input type="submit"value="ok">
+</form>
     </body>
 </html>
