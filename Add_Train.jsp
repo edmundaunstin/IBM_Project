@@ -19,7 +19,7 @@ End Time       : <input type="text"name="end_time"></br>
 Fare           : <input type="text"name="fare"></br>
 Train Day      : <input type="text"name="train_day"></br>
 <input type="submit"value="ok">
-<a href="http://localhost:8080/BookingSystem/Admin_View.jsp">click here</a>
+<a href="http://localhost:8080/BookingSystem/Admin_View.jsp">click here`</a>
 </form>
 
 
