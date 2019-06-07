@@ -8,7 +8,7 @@
 </head>
 <body>
 <form >
-<tr>
+		<tr>
 				<td>PNR</td>
 				<td><input type="password" name="password" /></td>
 			</tr><br/>
