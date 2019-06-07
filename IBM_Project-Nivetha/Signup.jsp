@@ -29,10 +29,6 @@
         
         Statement stat=con.createStatement();
         
-        int empId,sal,comId,magId,depId;
-        String empName,email,phone,jobId;
-        String Datehire;
-        
         String q="INSERT INTO userinfo(User_Name,Pwd,Email_Id,Phone_Number) VALUES('"+username+"','"+password+"','"+emailid+"','"+phonenumber+"')";
         
         stat.executeUpdate(q);

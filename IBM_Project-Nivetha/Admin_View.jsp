@@ -9,8 +9,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-    <form action="Admin_View.jsp">
-    <input type="text"name="search">
+    <form action="Edit_Traininfo.jsp">
+    <input type="text" name="search">
     <input type="submit"value="ok">
     </form>
     <sql:setDataSource
@@ -23,7 +23,6 @@
                                
                               
         
-                                           
                                            
                    <sql:query dataSource="${dbconnection}" var="rs">
                          select * from train
@@ -41,7 +40,10 @@
                        <td> <c:out value="${row.fare}"/></td>
                        <td> <c:out value="${row.train_day}"/></td>
                        </tr>
-        </c:forEach>>
+        </c:forEach>
 </table>
+<form action="Add_Train.jsp">
+<input type="submit"value="ok">
+</form>
     </body>
 </html>
