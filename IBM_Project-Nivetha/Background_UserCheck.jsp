@@ -21,7 +21,8 @@
         	
                String user=request.getParameter("Username");
                String pass=request.getParameter("PassWord");
-         
+               
+               session.setAttribute("user", user);
 
 
                 Class.forName("oracle.jdbc.OracleDriver");
@@ -40,13 +41,14 @@
          while (rs.next()) {
         String user_name = rs.getString("user_name");
         String pwd = rs.getString("pwd");
-        if(user.equals(user_name) && pass.equals(pwd)){
-           out.println("Strings match!!");
-           break;
+        if(user.equals(user_name) && pass.equals(pwd)){%>
+        
+        <%@include file="Refresh_Page.jsp" %>
+          <% break;
         }
          }
          %>   <br/>
-         <a href="http://localhost:8080/BOOKINGSYSTEM/IBM_Project-Nivetha/Choose_Trans.jsp">LOGIN SUCCESSFUL PROCEED TO CHOOSE TRANSPORTATION</a>
+        
              
     </body>
 </html>

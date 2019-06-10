@@ -10,10 +10,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<h10><center>User TRAIN INFO</center></h10>
+<center><body style="background-color: #ff3333">
+        <h1 style="font-family: cursive; font-size: 200%;">USER TRAIN INFO</h1><br>
 <%
-String s=request.getParameter("Train_No");
+String s=request.getParameter("Train_Number");
 int j=Integer.parseInt(s);
 Class.forName("oracle.jdbc.OracleDriver");
 
@@ -46,20 +46,20 @@ while (rs.next()) {
                             select * from train where train_no=<%=j %>
                       </sql:query>
        
-       <table border="1">
+                            <table border="1" style="font-family: inherit; font-size: 300%;background-color: #ffcccc;border-style: dotted">
       
        
            <c:forEach var="row" items="${rs.rows}">
-                      <tr>
-                          <td> <c:out value="${row.train_no}"/></td>
-                          <td> <c:out value="${row.train_name}"/></td>
-                          <td> <c:out value="${row.source_name}"/></td>
-                          <td> <c:out value="${row.destination_name}"/></td>
-                          <td> <c:out value="${row.start_time}"/></td>
-                          <td> <c:out value="${row.end_time}"/></td>
-                          <td> <c:out value="${row.fare}"/></td>
-                          <td> <c:out value="${row.train_day}"/></td>
-                          </tr>
+                      <tr >
+                          <td > <c:out value="${row.train_no}"/></td></tr>
+                        <tr>  <td> <c:out value="${row.train_name}"/></td></tr>
+                         <tr> <td> <c:out value="${row.source_name}"/></td></tr>
+                         <tr> <td> <c:out value="${row.destination_name}"/></td></tr>
+                         <tr> <td> <c:out value="${row.start_time}"/></td></tr>
+                        <tr>  <td> <c:out value="${row.end_time}"/></td></tr>
+                       <tr>   <td> <c:out value="${row.fare}"/></td></tr>
+                      <tr>    <td> <c:out value="${row.train_day}"/></td></tr>
+                          
            </c:forEach>
     </table>
   <% 
@@ -71,3 +71,8 @@ while (rs.next()) {
     %>
     </body>
     </html>
+    
+    
+    
+    
+

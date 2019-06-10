@@ -29,6 +29,10 @@
         
         Statement stat=con.createStatement();
         
+        int empId,sal,comId,magId,depId;
+        String empName,email,phone,jobId;
+        String Datehire;
+        
         String q="INSERT INTO userinfo(User_Name,Pwd,Email_Id,Phone_Number) VALUES('"+username+"','"+password+"','"+emailid+"','"+phonenumber+"')";
         
         stat.executeUpdate(q);
@@ -37,5 +41,8 @@
        
 	 %>
 </table>
+<h1 style="font-size: 300%; color: green;"></h1>>
+<a href="http://localhost:8090/BookingSystem/IBM_Project-master/IBM_Project-Nivetha/User_Login.jsp" style="color: darkblue;">GO BACK TO SIGN-IN</a><br/>
+
 </body>
 </html>

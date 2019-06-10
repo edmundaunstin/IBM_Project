@@ -6,37 +6,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<h1><center>SIGN-UP FORM</center></h1>
+<center><body  style="color: teal; background-color: silver ;" > 
+        <h1 style="font-family: Courier new; font-size: 300%;"><center>SIGN-UP FORM</center></h1><br>
 
 <form action="Signup.jsp" method="post">
 			<table style="with: 50%">
 				
 				<tr>
-					<td>UserName</td>
+                                    <td style="font-family: cursive; font-size: 200%">UserName</td>
 					<td><input type="text" name="username" /></td>
 				</tr>
 				<tr>
-					<td>EmailId</td>
+					<td style="font-family: cursive; font-size: 200%">EmailId</td>
 					<td><input type="text" name="emailid" /></td>
 				</tr>
 				
 					<tr>
-					<td>Password</td>
+					<td style="font-family: cursive; font-size: 200%">Password</td>
 					<td><input type="password" name="password" /></td>
 				</tr>
 				<tr>
 				
-				<td>ConformPassword</td>
+				<td style="font-family: cursive; font-size: 200%">ConformPassword</td>
 				<td><input type="password" name="password" /></td>
 				</tr>
 				
 				<tr>
-					<td>PhoneNumber</td>
+					<td style="font-family: cursive; font-size: 200%">PhoneNumber</td>
 					<td><input type="integer" name="phonenumber" /></td>
 				</tr>
-				</table>
-			<input type="submit" value="Submit" /></form>
+				</table><br><br>
+			<input type="submit" value="Submit" style="font-family: cursive; font-size: 200%; background-color: cornflowerblue "/></form>
 
 </body>
 </html>
