@@ -8,7 +8,7 @@
 </head>
 <center><body style="background-color:#ff9999;">
 <form action="User_Traininfo.jsp">
-    <%
+    <%;
         String user=(String)session.getAttribute("user");
         
         %>

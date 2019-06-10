@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<form action="Admin_View.jsp">
-UserName : <input type="text"name="Username"></br>
-PassWord : <input type="text"name="PassWord"></br>
-<input type="submit"value="Sign-up">
+<center><body style="background-color:slateblue;">
+<form action="Admin_View.jsp" style="alignment-adjust: central;">
+    <h1 style="font-size: 200%; align-content: center; font-family:verdana;"> UserName : <input type="text"name="Username"></br>
+        PassWord : <input type="text"name="PassWord"></h1></br>
+        <input type="submit"value="Sign-up" style="font-size: 200%; align-content: center; font-family:verdana; background-color: #0033ff">
 </form>
  <%
  boolean r=false;
@@ -18,9 +18,7 @@ PassWord : <input type="text"name="PassWord"></br>
 	 out.print("Alert message");
  }
 	 
- else{
-	out.print("Run Successfully");
- }
+ 
 %>
 </body>
 </html>

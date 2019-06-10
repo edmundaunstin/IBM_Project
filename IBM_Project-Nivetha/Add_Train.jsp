@@ -9,33 +9,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="Add_Train.jsp">
-Train Number   : <input type="text"name="train_no"></br>
-Train Name     : <input type="text"name="train_name"></br>
-Source Name    : <input type="text"name="source_name"></br>
-Detination Name: <input type="text"name="destination_name"></br>
-Start Time     : <input type="text"name="start_time"></br>
-End Time       : <input type="text"name="end_time"></br>
-Fare           : <input type="text"name="fare"></br>
-Train Day      : <input type="text"name="train_day"></br>
-<input type="submit"value="ok">
-<a href="http://localhost:8080/BookingSystem/Admin_View.jsp">click here`</a>
-</form>
-
-
-
-
-
 <% 	
-    String t_no = request.getParameter("train_no");
-	String t_name = request.getParameter("train_name");
-	String s_name = request.getParameter("source_name");
-	String d_name = request.getParameter("destination_name");
-	String s_time = request.getParameter("start_time");
-	String e_time = request.getParameter("end_time");
+    String url_id="http://localhost:8090/BookingSystem/IBM_Project-master/IBM_Project-Nivetha/User_Booking.jsp";
+    String t_no = request.getParameter("no");
+	String t_name = request.getParameter("name");
+	String s_name = request.getParameter("source");
+	String d_name = request.getParameter("des");
+	String s_time = request.getParameter("start");
+	String e_time = request.getParameter("end");
 	String fare = request.getParameter("fare");
-	String t_day = request.getParameter("train_day");
-	
+	String t_day = request.getParameter("day");
+	int t=Integer.parseInt(t_no);
 	%>
 
 <% 
@@ -47,12 +31,14 @@ String url="jdbc:oracle:thin:@localhost:1521:xe";
     
     Statement stat=con.createStatement();
     
-    String q="INSERT INTO train(train_no,train_name,source_name,destination_name,start_time,end_time,fare,train_day) VALUES('"+t_no+"','"+t_name+"','"+s_name+"','"+d_name+"','"+s_time+"','"+fare+"','"+t_day+"')";
+    String q="INSERT INTO train(train_no,train_name,source_name,destination_name,start_time,end_time,fare,train_day) VALUES('"+t+"','"+t_name+"','"+s_name+"','"+d_name+"','"+s_time+"','"+e_time+"','"+fare+"','"+t_day+"')";
     
     stat.executeUpdate(q);
     System.out.println("INSERTED");
     con.close();
    
  %>
+ 
+<%@include file="Admin_View.jsp" %>
 </body>
 </html>

@@ -6,13 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<center><body style="background-color: #330033">
+        <h1 style="font-family: initial;font-size: 300%;color: #cc00ff">WELCOME USER</h1><br>
+        <h1 style="font-family: initial;font-size: 300%;color: #cc00ff">PLEASE ENTER YOUR PNR NUMBER BELOW</h1>
 <form >
-<tr>
-				<td>PNR</td>
-				<td><input type="password" name="password" /></td>
-			</tr><br/>
-<input type="submit" value="ConformNow">
+    
+    
+    <input style="font-size: 300%" type="password" name="password" />
+			<br/><br>
+                        <input type="submit" value="ConformNow" style="font-family: initial;font-size: 300%;color: #cc00ff;background-color: #ff99cc">
 </form>
 </body>
 </html>
