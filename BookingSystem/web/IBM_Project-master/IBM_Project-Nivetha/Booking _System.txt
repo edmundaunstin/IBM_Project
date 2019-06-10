@@ -1,0 +1,97 @@
+IBM_Project
+Welcome Page
+        User Login
+        Admin Login
+Login
+      Sign_up
+      Log_in
+      UserName
+      Password
+      Alert_Message
+Admin
+      Choose_Trans
+      Train_Info
+              Search_Box  (Train No)
+              Train Information
+               Add Train
+              Time
+              Fare
+              Route Change
+              Train_Avail
+        Message -> Ticket confirm, waiting
+              Ticket Seat Number
+
+      Bus_Info
+                  Search_Box (Box No )
+                  Bus Information
+                  Add Bus
+                   Time
+                   Fare
+                   Route Change
+                  Train_Avail
+        Message -> Ticket confirm, waiting
+              Ticket Seat Number
+
+
+
+     Car_info
+                   Plate  _ No
+                   Car Information
+                    Add Car
+                   Fare
+                   Confirmation
+
+
+
+UserSign_up
+     UserName
+     Email
+      Password
+      Corfirm
+      Phone_numder
+      Alert Message
+      Confirm Email
+UserLogin 
+     UserName  Or Email_id
+      PAssword
+      Alert Message
+Choose Transport
+
+
+Train 
+     Search _> Train Number,Source and Destination
+     Cancellation
+             PNR no 
+             alert message
+             info delete database
+    Train Info
+    Waiting List (Percentage)
+     Booking Option
+         Source & Destination
+         Count
+         Name , Age, gender, Seat
+         Confirmation -> PNR ,Train Seat
+
+
+Bus
+      Search -> Sourcs & Destination
+      Cancellation
+             Ticket No
+             alert Message
+     Bus Info
+      Source & Destination
+         Count
+         Name , Age, gender, Seat No
+         Confirmation -> Ticket No 
+
+
+Car
+     Source & Destination
+      Confirmation
+      Fare
+      Confirm_No
+      Cancellation
+
+
+
+
