@@ -124,6 +124,10 @@ int i=0,k=0;
 	    }
     }
      %>
+      <form action="Booking_Option.jsp">
+     TRAIN NO:<input type="text" name="no">
+     <input type="submit" value="BOOK">
+     </form>
     </body>
     </html>
     

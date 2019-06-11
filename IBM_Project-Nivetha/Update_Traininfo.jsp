@@ -29,18 +29,18 @@ String f=(String)co1.getAttribute("number");
 if(ti!=""){
 	String q="Update train SET START_TIME='"+ti+"' WHERE TRAIN_NO="+no+"";
  stat.executeUpdate(q);
- out.println("TIME UPDATED");
 }
 if(fa!=""){
 	String q1="Update train SET FARE='"+fa+"' WHERE TRAIN_NO="+no+"";
 	stat.executeUpdate(q1);
-	out.println("FARE UPDATED");
+
 }
 if(ro!=""){
 	String q2="Update train SET SOURCE_NAME='"+ro+"' WHERE TRAIN_NO="+no+"";
 	stat.executeUpdate(q2);
-	out.println("ROUTE UPDATED");
 }
+response.sendRedirect("http://localhost:8080/BOOKINGSYSTEM/IBM_Project-Nivetha/Admin_View.jsp");
+
  con.close();
 
 %>

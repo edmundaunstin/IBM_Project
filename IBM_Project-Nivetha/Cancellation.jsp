@@ -9,12 +9,35 @@
 <center><body style="background-color: #330033">
         <h1 style="font-family: initial;font-size: 300%;color: #cc00ff">WELCOME USER</h1><br>
         <h1 style="font-family: initial;font-size: 300%;color: #cc00ff">PLEASE ENTER YOUR PNR NUMBER BELOW</h1>
-<form >
+<form action="Delete_Booking.jsp" >
     
     
-    <input style="font-size: 300%" type="password" name="password" />
+    <input style="font-size: 300%" type="text" name="PNR" />
+    
 			<br/><br>
                         <input type="submit" value="ConformNow" style="font-family: initial;font-size: 300%;color: #cc00ff;background-color: #ff99cc">
 </form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

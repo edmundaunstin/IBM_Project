@@ -36,9 +36,9 @@ String url="jdbc:oracle:thin:@localhost:1521:xe";
     stat.executeUpdate(q);
     System.out.println("INSERTED");
     con.close();
-   
+   response.sendRedirect("http://localhost:8080/BOOKINGSYSTEM/IBM_Project-Nivetha/Admin_View.jsp");
+
  %>
  
-<%@include file="Admin_View.jsp" %>
 </body>
 </html>

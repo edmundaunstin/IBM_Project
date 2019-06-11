@@ -18,6 +18,6 @@ END TIME     :<input type="text" name="end"><br/>
 FARE         :<input type="text" name="fare"><br/>
 TRAIN DAY    :<input type="text" name="day"><br/>
 <input type="submit" value="Add" style="font-family: fantasy;font-size: 100%;background-color:  #99ffcc"><br/>
-        </form></center>>
+        </form></center>
 </body>
 </html>

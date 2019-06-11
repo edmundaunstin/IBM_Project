@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import ="java.sql.*"%>
+<%@page import ="javax.sql.*"%>
+<%@ page import="javax.servlet.http.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,35 +10,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <form action="/action_page.php">
-    DATE:
-    <input type="date" name="date">
-  <input type="submit">
-</form>
 <h1><center>BOOKING DETAILS</center></h1>
- <div align="center">
-        <table border="1" cellpadding="5">
-           
-            <tr>
-                <th>NAME</th>
-                <th>AGE</th>
-                <th>GENDER</th>
-                <th>SEAT</th>
-           		<th>MEMBERS
-                            <select name="Members" value ="Members">
-     <option>1</option>
-     <option>2</option>
-     <option>3</option>
-     <option>4</option>
-</select> 
-                        </th>
 
-                
-            </tr>
-           
-                <tr>
-        </table>
- </div>
+<form action="Generate_pnr_AddDB.jsp">
+DATE:<input type="text" name="dt"><br/>
+FROM :<input type="text" name="fr"><br/>
+TO:<input type="text" name="to"><br/>
+NAME:<input type="text" name="name"><br/>
+AGE:<input type="text" name="age"><br/>
+GENDER:<input type="text" name="gen"><br/>
+BERTH:<input type="text" name="berth"><br/><br/>
+<input type="submit" value="CONFIRM">
+</form>
+<% 
+String f=request.getParameter("no");
+ServletContext c=getServletContext();
+c.setAttribute("number",f);
+
+%>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
@@ -69,45 +62,6 @@ $(document).ready(function() {
     <button class="add_form_field">Add New Field &nbsp; <span style="font-size:16px; font-weight:bold;">+ </span></button>
     <div><input type="text" name="mytext[]"></div>
 </div>
-     
-
 </body>
 </html>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
 

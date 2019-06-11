@@ -18,7 +18,7 @@
     <body>
         
         <% 
-        	
+               String url_id="http://localhost:8090/BookingSystem/IBM_Project-master/IBM_Project-Nivetha/User_Booking.jsp";
                String user=request.getParameter("Username");
                String pass=request.getParameter("PassWord");
                
@@ -43,7 +43,7 @@
         String pwd = rs.getString("pwd");
         if(user.equals(user_name) && pass.equals(pwd)){%>
         
-        <%@include file="Refresh_Page.jsp" %>
+        <%@include file="Refresh_Page.jsp"%>
           <% break;
         }
          }

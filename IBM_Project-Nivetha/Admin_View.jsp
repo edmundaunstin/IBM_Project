@@ -20,11 +20,7 @@
 	user="hr"
 	password="hr"/>
     <h1 style="font-size: 200%;font-family: cursive">TRAIN LIST</h1>
-                               
-                              
-        
-                                           
-                                           
+                      
                    <sql:query dataSource="${dbconnection}" var="rs">
                          select * from train
                     </sql:query>
@@ -42,9 +38,11 @@
                        <td> <c:out value="${row.train_day}"/></td>
                        </tr>
         </c:forEach>
-</table>
-<form action="Admin_AddTrain.jsp">
-<input type="submit" value="ADD TRAIN">
-</form>    
+</table><br>
+<form action="Admin_AddTrain.jsp" >
+    <input type="submit" value="ADD TRAIN" style="font-size: 300%;font-family: monospace">
+</form>  
+<form action="Send_Msg.jsp">
+<br/><input type="submit" value="SEND MESSAGE"></form>
     </body>
 </html>

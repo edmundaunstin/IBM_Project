@@ -11,32 +11,27 @@
 <body>
 <% 
 String s=request.getParameter("PNR");
-
 String url="jdbc:oracle:thin:@localhost:1521:xe";
 String u="hr";
 String pa="hr";
 Connection con=DriverManager.getConnection(url,u,pa);
-
 Statement stat=con.createStatement();
-
 String q="SELECT * FROM BookingInfo";
-
 ResultSet rs = stat.executeQuery(q);
 %>      
      
  <%  while (rs.next()) {
         String pnr = rs.getString("Pnr_No");
         if( s.equals(pnr)){
-        
-        	
+        	String q1="DELETE FROM BookingInfo WHERE Pnr_No='"+s+"'";
+        	 stat.executeUpdate(q1);
+        	 out.println("TICKET CANCELLED");
         }
-      %> 
-         
-		DELETE FROM BookingInfo WHERE Pnr_No=<%=s %>;
-		<%
-		}
+	}
 		%>
-			
+		<form action="User_Booking.jsp">
+			<br/><input type="submit" value="Go BACK">
+			</form>		
 	
 
 </body>

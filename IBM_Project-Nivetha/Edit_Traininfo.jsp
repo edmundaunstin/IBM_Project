@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<center><body style="background-color: #99ccff;"><br><br>
 
 <%
 String s=request.getParameter("search");
@@ -47,7 +47,7 @@ while (rs.next()) {
     		                         select * from train where train_no=<%=j %>
     		                   </sql:query>
     		    
-    		    <table border="1">
+                                         <table border="1" style="background-color: #3333ff;color: #ccccff;font-size: 300%;font-family: cursive;">
     		   
     		    
     		        <c:forEach var="row" items="${rs.rows}">
@@ -62,7 +62,7 @@ while (rs.next()) {
     		                       <td> <c:out value="${row.train_day}"/></td>
     		                       </tr>
     		        </c:forEach>
-    		</table>
+    		</table><br><br>
   <% 
     }
 }
@@ -72,14 +72,14 @@ while (rs.next()) {
     con.close();
     %>
     <br/>
-<h10><center>EDITING TRAIN INFO</center></h10>
-<form action="Update_Traininfo.jsp">
+    <h1 style="font-family: fantasy;font-size: 200%;"><center style="font-size: 100%;font-family: cursive">EDITING TRAIN INFO</center></h1>
+    <form action="Update_Traininfo.jsp" style="font-size: 300%;font-family: initial">
  CHANGE TIME : <input type="text" name="time"><br/>
  CHANGE FARE : <input type="text" name="fare"><br/>
  CHANGE ROUTE : <input type="text" name="route"><br/>
  TRAIN AVAILABILITY : <input type="radio" name="yes">YES
  					<input type="radio" name="no">NO<br/>
- <input type="submit" value="confirm">
+                                        <input type="submit" value="CONFIRM" style="font-size: 100%">
  </form>
 
 </body>

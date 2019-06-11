@@ -20,9 +20,9 @@
             TO<br>
             PAGE</h1>
             
-            <video width="320" height="240" controls>
-                <source src="../Extras/giphy.mp4" type="video/mp4">
-                Your browser does not support the <code>video</code> tag.
-            </video>
+            <img src="../Extras/Infinity-1s-200px.gif" alt=""/>
+            
+            
+        
     </body>
 </html>
